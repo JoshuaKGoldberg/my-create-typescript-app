@@ -1,0 +1,57 @@
+{
+	"name": "my-create-typescript-app",
+	"version": "0.0.0",
+	"description": "Hello, world.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JoshuaKGoldberg/my-create-typescript-app.git"
+	},
+	"license": "MIT",
+	"author": {
+		"name": "Josh Goldberg ✨",
+		"email": "npm@joshuakgoldberg.com"
+	},
+	"type": "module",
+	"main": "lib/index.js",
+	"files": [
+		"LICENSE.md",
+		"README.md",
+		"lib/",
+		"package.json"
+	],
+	"scripts": {
+		"build": "tsup",
+		"format": "prettier .",
+		"lint": "eslint . --max-warnings 0",
+		"prepare": "husky",
+		"tsc": "tsc"
+	},
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write"
+	},
+	"dependencies": {
+		"dedent": "^1.5.3",
+		"mocha": "^10.7.3",
+		"npm-package-arg": "^12.0.0",
+		"perignon": "^0.1.0",
+		"type-fest": "^4.35.0",
+		"typescript": "^5.7.2",
+		"zod": "^3.24.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "9.20.0",
+		"@types/node": "22.13.4",
+		"eslint": "9.20.1",
+		"eslint-plugin-jsx-a11y": "^6.10.2",
+		"husky": "9.1.7",
+		"knip": "5.27.2",
+		"lint-staged": "15.4.3",
+		"prettier": "^3.5.1",
+		"tsup": "8.3.6",
+		"typescript": "5.7.3",
+		"typescript-eslint": "8.24.1"
+	},
+	"engines": {
+		"node": ">=18.3.0"
+	}
+}
